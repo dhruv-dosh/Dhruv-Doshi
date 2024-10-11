@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dhruv's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">  
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">
+             <h1><b style="color: hsl(189, 37%, 60%);">D</b>hruv.</h1>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div id="home" class="container">
+        <!-- Home Section -->
+        <section  class="intro">
+            <h1>Hey, I'm <span class="name">Dhruv Doshi</span><br> But you can call me <span class="nickname">Doshi</span></h1>
+            <p>A full-stack Java developer</p>
+            <div class="buttons">
+                <a href="#">See my skills</a>
+                <a href="#about">More about me</a>
+            </div>
+        </section>
+    </div>
+
+    <section id="skills" class="skills-section">
+        <h1>SKILLS</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fa fa-code" style="font-size:54px"></i>
+                <h3>Web Design</h3>
+                <p>There are various activities that lighten up the mood of children here like playing games.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa fa-laptop" style="font-size:54px"></i>
+                <h3>Java Frontend</h3>
+                <p>We provide nutritious food, fruits, and sweets to children here.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa fa-terminal" style="font-size:54px"></i>
+                <h3>Java Backend</h3>
+                <p>We receive financial help from donors to buy clothes, beds, and support medical emergencies.</p>
+            </div>
+        </div>
+        
+    </section>
+
+   
+    <section id="projects" class="projects-section">
+        <h1>PROJECTS</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/project.jpg" alt="">
+                <div class="layer">
+                    <h3>Java Frontend</h3>
+                    <p>We provide nutritious food, fruits, and sweets to children here.</p>
+                    <a href=""><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="images/project.jpg" alt="">
+                <div class="layer">
+                    <h3>Java Frontend</h3>
+                    <p>We provide nutritious food, fruits, and sweets to children here.</p>
+                    <a href=""><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="images/project.jpg" alt="">
+                <div class="layer">
+                    <h3>Java Frontend</h3>
+                    <p>We provide nutritious food, fruits, and sweets to children here.</p>
+                    <a href=""><i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+   
+
+    
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <!-- <div class="contact-icon">
+                    <img src="email-icon.png" alt="Email Icon" style="width: 50px;">
+                </div> -->
+                
+                <h2>Contact Me</h2>
+                <p>Thank you for visiting my website! If you're interested in working together, have a question, or just want to say hello, feel free to reach out.</p>
+                <ul>
+                    <li><i class="material-icons">call</i> &nbsp; 9111518233</li>
+                    <li><i class="material-icons">mail</i> &nbsp; dhruvdoshi.pvt@gmail.com</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dhruvdoshijain?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BchiL%2Bo4KTlWsG5RAmmLLjg%3D%3D" class="fa fa-linkedin"></a>
+
+                    <a href="https://github.com/dhruv-dosh" class="fa fa-github"></a>
+
+                    <a href="https://www.linkedin.com/in/dhruvdoshijain?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BchiL%2Bo4KTlWsG5RAmmLLjg%3D%3D" class="fa fa-twitter"></a>
+
+                    <a href="https://www.instagram.com/_dhruv_doshi_/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="37840c66-cfe9-4a4e-89f6-d6eb83833008">
+                    
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+    
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+        </section>
+
+        <script src="script.js"></script>  
+</body>
+</html>

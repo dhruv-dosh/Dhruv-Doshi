@@ -1,0 +1,516 @@
+/* General Reset --------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Navigation Bar ---------------------------------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; /* Stick to the top */
+    left: 0;
+    right: 0;
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensures the navbar stays above other content */
+}
+
+
+.logo h1 {
+    height: 5vh; /* Adjust size */
+    width: 10vh;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    background-color: #2c2c2c00;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #fff;
+    background-color: hsl(189, 37%, 60%);
+    transform: 0.5s ease;
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+/* Navbar Hamburger Menu Styles ------------------------------------------------------------ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive Styles for the Nav */
+@media (max-width: 768px) {
+    nav{
+        position: relative;
+    }
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transition: 0.5s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+        z-index: 20;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+    .nav-links a {
+        color: #fff;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/*Home Intro Section Styling ----------------------------------------------------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    padding-top: 80px;
+    background: black;
+}
+.name{
+   color:hsl(189, 37%, 60%);
+}
+.intro {
+    padding: 100px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.intro h1, .about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: hsl(189, 37%, 60%);
+    border: none;
+    color: #fff;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .intro{
+        padding-top: 25vh;
+        height: 70vh;
+    }
+    .intro h1{
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+    }
+
+    .buttons a {
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+    .buttons a{
+        font-size: 20px;
+        padding: 4px 10px;
+    }
+
+}
+
+/* Extra small screen adjustments */
+@media screen and (max-width: 320px) {
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .buttons a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Contact Section -------------------------------------------------------------------------*/
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    padding: 100px;
+    color: #fff;
+    height: 100vh;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    flex: 1 1 45%;
+}
+
+.contact-info h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+.contact-info p{
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+
+.material-icons{
+    color:hsl(189, 37%, 60%) ;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    color: hsl(189, 37%, 60%);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    flex: 1 1 45%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: hsl(189, 37%, 70%);
+}
+
+.contact-form textarea{
+    padding-bottom: 60px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: none;
+}
+
+.contact-form button.submit-btn {
+    background-color:  hsl(189, 37%, 40%);
+    border: 2px solid hsl(189, 37%, 40%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button.submit-btn:hover {
+    color: hsl(189, 37%, 60%);
+    border: 2px solid hsl(189, 37%, 40%);
+    background-color: hsla(189, 37%, 90%, 0);
+}
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .aboutcard h1, .aboutcard p {
+        font-size: 0.8rem;
+    }
+
+    .contact-info, .contact-form {
+        width : 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+  
+}
+@media screen and (max-width: 320px) {
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+    .contact-info ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Skills Section ------------------------------------------------------------------------------*/
+.skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-section h1 {
+    padding-top: 30px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #2c2c2c ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 55vh;
+    max-width: 60vh;
+    text-align: left;
+    padding: 40px;
+    transition: background-color 0.5s  ,transform 0.5s;
+}
+
+
+.skill-card h3 {
+    font-size: 22px;
+    color: white;
+    padding-top: 20px;
+    margin: 20px 0 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: white;
+}
+
+.skill-card:hover {
+    background-color: hsl(189, 37%, 50%);
+    transform: translateY(-10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        max-width: 90%;
+    }
+}
+
+
+/* projects Section ------------------------------------------------------------------------------*/
+.projects-section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.projects-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img{
+   width: 50vh;
+   height: 60vh;
+   border-radius: 10px;
+   display: block;
+   transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(hsla(189, 37%, 10%, 0.202), hsl(189, 37%, 40%));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.4s;
+}
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: hsl(189, 37%, 50%);
+    text-decoration: none;
+    font-size: 8px;
+    line-height: 80px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.project-card:hover img{
+    transform: scale(1.05);
+}
+
+.project-card:hover .layer{
+    height: 100%;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+}
