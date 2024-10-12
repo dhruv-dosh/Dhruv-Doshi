@@ -330,6 +330,11 @@ nav {
     border: 2px solid hsl(189, 37%, 40%);
     background-color: hsla(189, 37%, 90%, 0);
 }
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 5px;
+    }
+}    
 @media screen and (max-width: 480px) {
     .contact-container {
         padding: 30px;
@@ -423,7 +428,14 @@ nav {
     }
 
     .skill-card {
+        height: 50vh;
         max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .skill-card {
+        height: 40vh;
+        max-width: 85%;
     }
 }
 
@@ -513,7 +525,14 @@ nav {
     }
 
     .project-card {
+        height: 60vh;
         max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .project-card {
+        height: 40vh;
+        max-width: 85%;
     }
 }
 
@@ -613,7 +632,7 @@ nav {
         height: 0;
     }
 
-    .aboutme div {
+    .aboutcontent {
         padding: 3vh;
         border-radius: 20px;
         max-width: 100%;
@@ -627,7 +646,7 @@ nav {
         height: 0;
     }   
 
-    .aboutme div {
+    .aboutcontent {
         padding: 2vh;
         background-color: #33333300;
         height: auto;
