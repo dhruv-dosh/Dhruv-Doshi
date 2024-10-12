@@ -514,3 +514,123 @@ nav {
         max-width: 90%;
     }
 }
+
+
+
+/* About Me------------------------------------------------------------------------------- */
+
+.aboutme {
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+.aboutcontent {
+    height: 75vh;
+    padding-left: 50px;
+    font-size: 15px;
+    text-align: left;
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start;
+    flex-direction: column; /* Ensures content is stacked vertically */
+}
+/* Styles for the image */
+.aboutme img {
+    width: 50vh;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+/* Styles for the text container */
+.aboutme div {
+    background-color: black;
+    max-width: 600px;
+    text-align: left;
+    justify-content: left;
+}
+.aboutme div h1{
+    font-size: 45px;
+    padding-bottom: 2vh;
+}
+
+.aboutme div p{
+    color: #ffffff9a;
+    padding-bottom: 2vh;
+}
+
+.aboutme a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color: hsla(189, 37%, 50%);
+    border: 2px solid hsl(189, 37%, 50%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.education{
+    padding-bottom: 10vh;
+}
+
+.education h4 {
+    padding-bottom: 3px;
+    margin-bottom: 4vh;
+    position: relative;
+    display: inline-block; /* Ensures the underline fits the width of the text */
+}
+
+.education h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: hsl(189, 37%, 50%); /* Blue color for the underline */
+}
+
+.education div{
+    padding-bottom: 1vh;
+    line-height: 8px;
+}
+/* Media Query for small devices (tablets, phones) */
+@media (max-width: 768px) {
+    .aboutme {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .aboutme img {
+        width: 40vh;
+        height: 50vh;
+        margin-bottom: 20px; /* Adds spacing between image and text */
+    }
+
+    .aboutme div {
+        padding: 3vh;
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Media Query for extra small devices (phones) */
+@media (max-width: 480px) {
+    .aboutme img {
+        width: 25vh;
+        height: 40vh;
+    }
+
+    .aboutme div {
+        padding: 2vh;
+        background-color: #33333300;
+        height: auto;
+    }
+}
