@@ -177,7 +177,7 @@ nav {
 
 @media screen and (max-width: 480px) {
     .intro{
-        height: 60vh;
+        height: 70vh;
     }
     .intro h1 {
         font-size: 2rem;
