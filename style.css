@@ -190,6 +190,9 @@ nav {
         font-size: 20px;
         padding: 4px 10px;
     }
+    .container{
+        padding-top: 40px;
+    }
 
 }
 
